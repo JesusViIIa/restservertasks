@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const uri = 'mongodb://localhost:27017/dbmern'
+const uri = 'mongodb+srv://apirest:V67Dpo7bF8FHcQjQ@cluster0.2dpva.mongodb.net/tasks'
 mongoose.connect(uri)
-    .then(db=> console.log('db connected'))
-    .catch(err=> console.error(err));
+    .then(db => console.log('db connected'))
+    .catch(err => console.error(err));
 
-module.exports=  mongoose
+module.exports = mongoose
